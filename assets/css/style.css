@@ -1,0 +1,586 @@
+body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background:#FAE7CF;
+    overflow-x: hidden
+}
+
+/** ------------------------ORDER/HIERARCHY -------------------------------------------*/
+/* name + navbar? */
+.entirenavbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* about, skills, contact */
+#navbaritems {
+    margin-left: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+/* about, skills, contact each has border */
+.navbar-item {
+    padding-top: 8px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.navbar-item a{
+    text-decoration: none;
+    color: black;
+}
+
+#lightbulb {
+    font-size: 30px;
+    visibility: visible;
+    filter: grayscale(100%);
+}
+
+/* each large section like skills, edu, etc  */
+.section {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #56555B;
+}
+
+.skillsection {
+    border-bottom: 1px solid #56555B;
+    border-top: 1px solid #56555B;
+}
+
+
+/** ------------------------COLOR, FONT, STYLISH STYLING -------------------------------------------*/
+
+
+.cs-student {
+    margin-left: 100px;
+    font-size: 17px;
+}
+
+.name {
+    font-size: 200px;
+    line-height: 150px;
+    letter-spacing: -0.1em;
+}
+
+.dark-mode {
+    background: #2B0404;
+    opacity: 0.8;
+  }
+
+.dark-mode #lightbulb {
+    filter: grayscale(0%);
+}
+
+
+.dark-mode .navbar-item, .dark-mode .lang, .dark-mode .git, .dark-mode .navbar-item a, .dark-mode .cs-student, .dark-mode .aboutMeText,
+.dark-mode .seriously, .dark-mode .coursework, .dark-mode .orgs, 
+ .dark-mode .githubtext a, .dark-mode .linkedintext a, .dark-mode .contact-text {
+    color: #FFDCE0;
+}
+
+.dark-mode .aboutTitle, .dark-mode .skill-name, .dark-mode .college, .dark-mode .gradyear, .dark-mode .hiremeButton {
+    color: #FFF0EF;
+}
+  
+
+.navbar-item, .aboutMeText, .lang, .tech-row1, .classes, .contact-text {
+    font-family: Karla;
+}
+
+.title, .cs-student, .internship, .aboutTitle, .skill-name, .college, .gradyear, .name {
+    font-family: Old Standard TT;
+}
+
+.title, .name {
+    color: #8DACCB;
+}
+
+.title-skill, .title-edu, .title-proj, .title-contact {
+    font-size: 140px;
+    line-height: 173px;
+    font-weight: bold;
+    letter-spacing: -0.04em;
+    color: #8DACCB;
+}
+
+.aboutTitle, .aboutMeText {
+    margin-right: 100px;
+    
+    color: #1F1E22;
+}
+
+.aboutMeText {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.about {
+    margin-left: 1035px;
+    display: flex;
+    flex-direction: column;    
+}
+
+.profile img {
+    width: 100%;
+}
+
+.profile {
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 400px;
+}
+
+.aboutme {
+    margin-top: 10px;
+}
+
+.aboutTitle {
+    font-size: 30px;
+    text-align: left;
+}
+
+.skillflexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-subflex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.horizontalskillflex {
+    display: flex;
+    flex-direction: row;
+    margin-left: 70px;
+}
+
+.familiar {
+    width: 452px;
+    height: 7px;
+   
+
+    background: linear-gradient(to right, 
+    #75B4E1    0%, 
+    #75B4E1 50%,
+    #FEFAFA 50%,
+    #FEFAFA 100%);
+	border-radius: 2px;
+}
+
+.comfortable {
+    width: 452px;
+    height: 7px;
+   
+
+    background: linear-gradient(to right, 
+    #75B4E1    0%, 
+    #75B4E1 750%,
+    #FEFAFA 75%,
+    #FEFAFA 100%);
+    border-radius: 2px;
+    margin-left: 70px;
+}
+
+.advanced {
+    width: 452px;
+    height: 7px;
+   
+
+    background-color: #75B4E1;
+	border-radius: 2px;
+}
+
+.col, .git{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.git {
+    margin-left: 70px;
+}
+
+.title-skill {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 140px;
+    color: #8DACCB;
+}
+
+.skill-name {
+    margin-left: 10px;
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #2C2148;
+}
+
+.lang, .git {
+    padding-right: 300px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    color: #2C2148;
+}
+
+.internshipbanner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 700px;
+}
+
+
+
+.dark-mode .hiremeButton {
+    border: 1px solid white;
+}
+
+.dark-mode .hiremeButton a {
+    text-decoration: none;
+    color: #FFF0EF;
+}
+
+.hiremeButton a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.hiremeButton {
+    width: 133.92px;
+    height: 35px;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 20px;
+    border: 1px solid #56555B;
+
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+    margin-bottom: 5px;
+
+}
+
+.seriously {
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 10px;
+    color: #000000;
+}
+
+.education-section {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.campus img {
+    width: 100%;
+}
+
+.education-rowflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.campus {
+    margin-left: 160px;
+    margin-top: 40px;
+    width: 300px;
+    z-index: 0;
+}
+
+.title-edu {
+    margin-top: 300px;
+    margin-right: 70px;
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 111px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    color: #8DACCB;
+}
+
+.college {
+    margin-top: 20px;
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+
+    color: #232226;
+}
+
+.gradyear {
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #232226;
+}
+
+.coursework, .classlist, .orgs {
+    margin-left: 180px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #232226;
+}
+
+.coursework {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+.hanafuda {
+    margin-top: 40px;
+    margin-left: 800px;
+    width: 250px;
+    height: 500px;
+    /* margin-top: 40px; */
+}
+
+
+.hanafuda-overlay{
+    width: 100%;
+  height: 100%;
+}
+
+.byow, .byow-overlay {
+    width: 330px;
+    height: 300px;
+}
+
+.kdtree, .kdtree-overlay {
+    margin-bottom: 15px;
+    width: 300px;
+    height: 300px;
+}
+
+.byow, .hanafuda, .kdtree {
+    display: inline-block;
+    overflow: hidden;
+    margin-right: 40px;
+    position: relative;
+}
+
+.kdtree img {
+    height: 100%;
+}
+.byow img {
+    width: 100%;
+}
+
+.hanafuda img {
+    height: 100%;
+}
+
+
+.byow-overlay, .hanafuda-overlay, .kdtree-overlay {
+    position: absolute;
+    /* PROBLEM 4: Move the color overlay to cover the image properly */
+    top: 0px;
+    left: 0px;
+    /* PROBLEM 5: What should the opacity be when there is no hover? */
+    opacity: 0;
+    transition: 0.3s;
+    background-color: #140E0E;
+}
+
+.byow:hover .byow-overlay {
+    opacity: 0.7;
+}
+
+.byow:hover .image-card-text {
+    visibility: visible;
+}
+
+.hanafuda:hover .image-card-text {
+    visibility: visible;
+}
+
+.kdtree:hover .image-card-text {
+    visibility: visible;
+}
+
+.hanafuda .image-card-text {
+    z-index: 2;
+}
+
+.kdtree:hover .kdtree-overlay {
+    opacity: 0.7;
+}
+.hanafuda:hover .hanafuda-overlay {
+    opacity: 0.7;
+}
+
+.hanafuda-overlay {
+    z-index: 2;
+}
+
+.image-card-text {
+    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    visibility: hidden;
+    
+font-family: Karla;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 26px;
+
+color: #FFFFFF;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+
+
+.title-proj {
+    margin-left: 300px;
+    z-index: 3;
+    position: absolute;
+    margin-top: 300px;
+    font-family: Old Standard TT;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 130px;
+    line-height: 124px;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #8DACCB;
+
+}
+
+.cubeflex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title-contact {
+    margin-right: 800px;
+    margin-top: 30px;
+    font-family: Old Standard TT;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 160px;
+    line-height: 100px;
+    /* or 50% */
+
+    text-align: center;
+    letter-spacing: -0.08em;
+
+    color: #8DACCB;
+}
+
+.contact-flex {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #2C2148;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-text, .linkedintext, .githubtext {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #2C2148;
+}
+
+.icon img {
+    height: 100%;
+}
+
+.icon {
+    height: 50px;
+}
+
+.icon-rowflex {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.contact-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+
+.navbar-item:hover, #lightbulb:hover, .icon:hover, .linkedintext:hover, .githubtext:hover, .hireButton:hover {
+    cursor: pointer;
+}
+
+.linkedintext a{
+    text-decoration: none;
+    color: black;
+}
+
+.githubtext a{
+    text-decoration: none;
+    color: black;
+}
