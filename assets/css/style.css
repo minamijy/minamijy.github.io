@@ -39,7 +39,7 @@ body {
 #lightbulb {
     font-size: 30px;
     visibility: visible;
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 /* each large section like skills, edu, etc  */
@@ -74,7 +74,7 @@ body {
   }
 
 .dark-mode #lightbulb {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
 }
 
 
@@ -117,7 +117,7 @@ body {
 
 .aboutMeText {
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about {
@@ -182,7 +182,7 @@ body {
 
     background: linear-gradient(to right, 
     #75B4E1    0%, 
-    #75B4E1 750%,
+    #75B4E1 75%,
     #FEFAFA 75%,
     #FEFAFA 100%);
     border-radius: 2px;
