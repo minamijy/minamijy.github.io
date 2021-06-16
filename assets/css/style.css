@@ -1,586 +1,676 @@
 body {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-    background:#FAE7CF;
-    overflow-x: hidden
+  background: #f8f8ff;
+  overflow-x: hidden;
 }
 
 /** ------------------------ORDER/HIERARCHY -------------------------------------------*/
-/* name + navbar? */
-.entirenavbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+
+.image-card-text {
+  font-family: alice;
+  font-size: 20px;
+  color: #595452;
+}
+
+.skill-type {
+  font-family: alice;
+  font-size: 20px;
+  color: #1a1513;
 }
 
 /* about, skills, contact */
-#navbaritems {
-    margin-left: 1100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#navbar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #56555b;
 }
-
-
 
 /* about, skills, contact each has border */
-.navbar-item {
-    padding-top: 8px;
-    font-size: 20px;
-    margin-right: 20px;
+.navbar-item,
+.skill-item {
+  font-family: Karla;
+  line-height: 20px;
+  color: #2c2148;
+  padding-top: 8px;
+  font-size: 20px;
+  margin-right: 20px;
 }
 
-.navbar-item a{
-    text-decoration: none;
-    color: black;
+.skill-item {
+  margin-left: 40px;
+}
+
+.navbar-item a,
+.skill-item a {
+  text-decoration: none;
+  color: black;
 }
 
 #lightbulb {
-    font-size: 30px;
-    visibility: visible;
-    filter: grayscale(0%);
+  position: fixed;
+  top: 20px !important;
+  right: 20px !important;
+  font-size: 30px;
+  visibility: visible;
+  filter: grayscale(0%);
 }
 
 /* each large section like skills, edu, etc  */
-.section {
-    margin-bottom: 60px;
-    border-bottom: 1px solid #56555B;
-}
-
-.skillsection {
-    border-bottom: 1px solid #56555B;
-    border-top: 1px solid #56555B;
-}
-
-
-/** ------------------------COLOR, FONT, STYLISH STYLING -------------------------------------------*/
-
-
-.cs-student {
-    margin-left: 100px;
-    font-size: 17px;
-}
-
-.name {
-    font-size: 200px;
-    line-height: 150px;
-    letter-spacing: -0.1em;
-}
-
-.dark-mode {
-    background: #2B0404;
-    opacity: 0.8;
-  }
-
-.dark-mode #lightbulb {
-    filter: grayscale(100%);
-}
-
-
-.dark-mode .navbar-item, .dark-mode .lang, .dark-mode .git, .dark-mode .navbar-item a, .dark-mode .cs-student, .dark-mode .aboutMeText,
-.dark-mode .seriously, .dark-mode .coursework, .dark-mode .orgs, 
- .dark-mode .githubtext a, .dark-mode .linkedintext a, .dark-mode .contact-text {
-    color: #FFDCE0;
-}
-
-.dark-mode .aboutTitle, .dark-mode .skill-name, .dark-mode .college, .dark-mode .gradyear, .dark-mode .hiremeButton {
-    color: #FFF0EF;
-}
-  
-
-.navbar-item, .aboutMeText, .lang, .tech-row1, .classes, .contact-text {
-    font-family: Karla;
-}
-
-.title, .cs-student, .internship, .aboutTitle, .skill-name, .college, .gradyear, .name {
-    font-family: Old Standard TT;
-}
-
-.title, .name {
-    color: #8DACCB;
-}
-
-.title-skill, .title-edu, .title-proj, .title-contact {
-    font-size: 140px;
-    line-height: 173px;
-    font-weight: bold;
-    letter-spacing: -0.04em;
-    color: #8DACCB;
-}
-
-.aboutTitle, .aboutMeText {
-    margin-right: 100px;
-    
-    color: #1F1E22;
-}
-
-.aboutMeText {
-    font-size: 15px;
-    margin-bottom: 40px;
-}
-
-.about {
-    margin-left: 1035px;
-    display: flex;
-    flex-direction: column;    
-}
-
-.profile img {
-    width: 100%;
-}
-
-.profile {
-    margin-top: 40px;
-    margin-left: 50px;
-    width: 400px;
-}
-
-.aboutme {
-    margin-top: 10px;
-}
-
-.aboutTitle {
-    font-size: 30px;
-    text-align: left;
-}
-
-.skillflexbox {
-    display: flex;
-    flex-direction: column;
-}
-
-.skill-subflex {
-    display: flex;
-    flex-direction: column;
-    margin-left: 70px;
-}
-
-.horizontalskillflex {
-    display: flex;
-    flex-direction: row;
-    margin-left: 70px;
-}
-
-.familiar {
-    width: 452px;
-    height: 7px;
-   
-
-    background: linear-gradient(to right, 
-    #75B4E1    0%, 
-    #75B4E1 50%,
-    #FEFAFA 50%,
-    #FEFAFA 100%);
-	border-radius: 2px;
-}
-
-.comfortable {
-    width: 452px;
-    height: 7px;
-   
-
-    background: linear-gradient(to right, 
-    #75B4E1    0%, 
-    #75B4E1 75%,
-    #FEFAFA 75%,
-    #FEFAFA 100%);
-    border-radius: 2px;
-    margin-left: 70px;
-}
-
-.advanced {
-    width: 452px;
-    height: 7px;
-   
-
-    background-color: #75B4E1;
-	border-radius: 2px;
-}
-
-.col, .git{
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-}
-
-.git {
-    margin-left: 70px;
-}
-
-.title-skill {
-    margin-top: 100px;
-    font-weight: bold;
-    font-size: 140px;
-    color: #8DACCB;
-}
-
-.skill-name {
-    margin-left: 10px;
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-
-    color: #2C2148;
-}
-
-.lang, .git {
-    padding-right: 300px;
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 30px;
-    color: #2C2148;
-}
-
-.internshipbanner {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 700px;
-}
-
-
-
-.dark-mode .hiremeButton {
-    border: 1px solid white;
-}
-
-.dark-mode .hiremeButton a {
-    text-decoration: none;
-    color: #FFF0EF;
-}
-
-.hiremeButton a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.hiremeButton {
-    width: 133.92px;
-    height: 35px;
-    text-align: center;
-    padding-top: 5px;
-    border-radius: 20px;
-    border: 1px solid #56555B;
-
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.1em;
-
-    color: #000000;
-    margin-bottom: 5px;
-
-}
-
-.seriously {
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-    padding-right: 10px;
-    color: #000000;
-}
-
-.education-section {
-    margin-left: 200px;
-    display: flex;
-    flex-direction: column;
-}
-
-.campus img {
-    width: 100%;
-}
-
-.education-rowflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.campus {
-    margin-left: 160px;
-    margin-top: 40px;
-    width: 300px;
-    z-index: 0;
-}
-
-.title-edu {
-    margin-top: 300px;
-    margin-right: 70px;
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 90px;
-    line-height: 111px;
-    text-align: right;
-    letter-spacing: 0.1em;
-    color: #8DACCB;
-}
-
-.college {
-    margin-top: 20px;
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 31px;
-    text-align: center;
-
-    color: #232226;
-}
-
-.gradyear {
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
-
-    color: #232226;
-}
-
-.coursework, .classlist, .orgs {
-    margin-left: 180px;
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #232226;
-}
-
-.coursework {
-    padding-top: 10px;
-}
-
-
-
-
-
-
-
-.hanafuda {
-    margin-top: 40px;
-    margin-left: 800px;
-    width: 250px;
-    height: 500px;
-    /* margin-top: 40px; */
-}
-
-
-.hanafuda-overlay{
-    width: 100%;
-  height: 100%;
-}
-
-.byow, .byow-overlay {
-    width: 330px;
-    height: 300px;
-}
-
-.kdtree, .kdtree-overlay {
-    margin-bottom: 15px;
-    width: 300px;
-    height: 300px;
-}
-
-.byow, .hanafuda, .kdtree {
-    display: inline-block;
-    overflow: hidden;
-    margin-right: 40px;
-    position: relative;
-}
-
-.kdtree img {
-    height: 100%;
-}
-.byow img {
-    width: 100%;
-}
-
-.hanafuda img {
-    height: 100%;
-}
-
-
-.byow-overlay, .hanafuda-overlay, .kdtree-overlay {
-    position: absolute;
-    /* PROBLEM 4: Move the color overlay to cover the image properly */
-    top: 0px;
-    left: 0px;
-    /* PROBLEM 5: What should the opacity be when there is no hover? */
-    opacity: 0;
-    transition: 0.3s;
-    background-color: #140E0E;
-}
-
-.byow:hover .byow-overlay {
-    opacity: 0.7;
-}
-
-.byow:hover .image-card-text {
-    visibility: visible;
-}
 
-.hanafuda:hover .image-card-text {
-    visibility: visible;
+#expsection {
+  border-top: 1px solid #56555b;
+  margin-bottom: 90px;
+  margin-top: 90px;
 }
-
-.kdtree:hover .image-card-text {
-    visibility: visible;
-}
-
-.hanafuda .image-card-text {
-    z-index: 2;
-}
-
-.kdtree:hover .kdtree-overlay {
-    opacity: 0.7;
-}
-.hanafuda:hover .hanafuda-overlay {
-    opacity: 0.7;
-}
-
-.hanafuda-overlay {
-    z-index: 2;
-}
-
-.image-card-text {
-    /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    visibility: hidden;
-    
-font-family: Karla;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 26px;
-
-color: #FFFFFF;
-}
-
-#projects {
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-}
-
-
-
-.title-proj {
-    margin-left: 300px;
-    z-index: 3;
-    position: absolute;
-    margin-top: 300px;
-    font-family: Old Standard TT;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 130px;
-    line-height: 124px;
-    text-align: center;
-    letter-spacing: -0.04em;
-
-    color: #8DACCB;
-
+#edusection {
+  border-top: 1px solid #56555b;
+  margin-bottom: 90px;
+  margin-top: 90px;
 }
 
-.cubeflex {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#projsection {
+  border-top: 1px solid #56555b;
+  margin-bottom: 90px;
+  margin-top: 90px;
 }
 
 .title-contact {
-    margin-right: 800px;
-    margin-top: 30px;
-    font-family: Old Standard TT;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 160px;
-    line-height: 100px;
-    /* or 50% */
+  margin-top: 30px;
+}
 
-    text-align: center;
-    letter-spacing: -0.08em;
+#contactsection {
+  margin-top: 90px;
+  border-top: 1px solid #56555b;
+  margin-bottom: -10px;
+}
 
-    color: #8DACCB;
+#skillsection {
+  border-top: 1px solid #56555b;
+}
+
+/** ------------------------COLOR, FONT, STYLISH STYLING (lol) -------------------------------------------*/
+
+.dark-mode {
+  background: #292a32;
+}
+
+.dark-mode #lightbulb {
+  filter: grayscale(100%);
+}
+
+.dark-mode .navbar-item,
+.dark-mode .skill-item,
+.dark-mode .skill-type,
+.dark-mode .company,
+.dark-mode footer,
+.dark-mode .duration,
+.dark-mode .descrip,
+.dark-mode .lang,
+.dark-mode .git,
+.dark-mode .navbar-item a,
+.dark-mode .skill-item a,
+.dark-mode .aboutMeText,
+.dark-mode .seriously,
+.dark-mode .courses-orgs,
+.dark-mode .contact-text a,
+.dark-mode .contact-text {
+  color: #e0e7ec;
+}
+
+.dark-mode .aboutTitle,
+.dark-mode .title-skill,
+.dark-mode .title-exp,
+.dark-mode .title-edu,
+.dark-mode .title-proj,
+.dark-mode .title-contact,
+.dark-mode .skill-name,
+.dark-mode .hiremeButton {
+  color: #e0e7ec;
+}
+
+.aboutMeText,
+.tech-row1,
+.classes,
+.courses-orgs,
+.contact-text,
+.lang,
+.git,
+.descrip {
+  font-family: Karla;
+  font-size: 16px;
+  /* line-height: 20px; */
+  color: #292625;
+}
+
+.lang,
+.git {
+  padding-bottom: 10px;
+}
+
+.skill-type {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bigflex-cal {
+  margin-left: 470px;
 }
 
 .contact-flex {
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 30px;
-    /* or 167% */
-
-    text-align: center;
-
-    color: #2C2148;
-    display: flex;
-    flex-direction: column;
+  font-family: Karla;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2c2148;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-text, .linkedintext, .githubtext {
-    font-family: Karla;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 30px;
-    /* or 167% */
-
-    text-align: center;
-
-    color: #2C2148;
+.contact-text {
+  font-family: Karla;
+  font-size: 14px;
+  text-align: center;
+  color: #2c2148;
 }
 
-.icon img {
-    height: 100%;
+.name {
+  font-family: Alice;
+  font-size: 275px;
+  letter-spacing: -0.1em;
+  line-height: 176px;
+  color: #80a8e4;
+  margin-left: 40px;
+  margin-top: -10px;
+}
+
+.title-skill,
+.title-exp,
+.title-edu,
+.title-proj,
+.title-contact {
+  padding-top: 20px;
+  font-family: Alice;
+  font-size: 60px;
+  color: #595452;
+}
+
+.title-skill {
+  text-align: center;
+}
+
+.title-skill,
+.title-exp {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.aboutTitle,
+.aboutMeText {
+  margin-right: 30px;
+}
+
+.aboutme {
+  margin-top: 5px;
+}
+
+.aboutTitle {
+  font-family: Alice;
+  font-size: 27px;
+  text-align: left;
+}
+
+.aboutMeText {
+  width: 400px;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.about {
+  margin-left: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile img {
+  width: 100%;
+}
+
+.profile {
+  margin-top: -45px;
+  margin-right: 50px;
+  width: 380px;
+}
+
+.skillflexbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-subflex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 210px;
+}
+
+.horizontalskillflex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 70px;
+}
+
+.familiar {
+  margin-bottom: 5px;
+  width: 452px;
+  height: 7px;
+
+  background-color: #75b4e1;
+
+  background: linear-gradient(
+    to right,
+    #75b4e1 0%,
+    #75b4e1 50%,
+    #fefafa 50%,
+    #fefafa 100%
+  );
+  border-radius: 2px;
+}
+
+.comfortable {
+  width: 452px;
+  height: 7px;
+  margin-bottom: 5px;
+
+  background: linear-gradient(
+    to right,
+    #75b4e1 0%,
+    #75b4e1 75%,
+    #fefafa 75%,
+    #fefafa 100%
+  );
+  border-radius: 2px;
+  margin-left: 70px;
+}
+
+.advanced {
+  width: 452px;
+  height: 7px;
+  margin-bottom: 5px;
+
+  background-color: #75b4e1;
+  border-radius: 2px;
+}
+
+.col,
+.git {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.git {
+  margin-left: 70px;
+}
+
+.skill-name {
+  margin-left: 10px;
+  font-family: alice;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #2c2148;
+}
+
+.internshipbanner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 38.5em;
+  /* the width is for centering the banner */
+}
+
+.dark-mode .hiremeButton {
+  border: 1px solid white;
+}
+
+.dark-mode .hiremeButton a {
+  text-decoration: none;
+  color: #fff0ef;
+}
+
+.hiremeButton a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hiremeButton {
+  width: 133.92px;
+  height: 35px;
+  padding-top: 5px;
+  border-radius: 20px;
+  border: 1px solid #56555b;
+
+  font-family: Karla;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.seriously {
+  font-family: alice;
+  font-size: 20px;
+  line-height: 25px;
+  padding-right: 10px;
+  color: #000000;
+}
+
+/* -----------------------------experience--------------------------------------------------------------------- */
+.title-exp,
+.bigflex,
+.descrip {
+  margin-left: 270px;
+} /* this margin shifts entire section */
+
+.title-exp {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  padding-bottom: 5px;
+}
+
+.company {
+  font-family: Alice;
+  font-size: 25px;
+}
+
+.duration {
+  font-family: Alice;
+  font-size: 15px;
+}
+
+.descrip {
+  width: 900px;
+  /* adjustme where the desription text goes to new line */
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 50px;
+}
+
+#expsection {
+  margin-bottom: 60px;
+}
+
+.bigflex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #56555b;
+  width: 60%;
+  /* adjustme where the desription text goes to new line */
+}
+
+.miniflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+/* -----------------------------education--------------------------------------------------------------------- */
+
+.bigflex-cal {
+  /*😎*/
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.miniflex-cal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.title-edu {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.courses-orgs {
+  margin-left: 500px;
+  line-height: 20px;
+}
+
+ul {
+  margin: 5px;
+}
+
+#edusection {
+  margin-bottom: 90px;
+}
+
+/* -----------------------------projects--------------------------------------------------------------------- */
+
+.title-proj {
+  text-align: right;
+  margin-right: 250px;
+  padding-top: 30px;
+}
+
+.project-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #56555b;
+  width: 70%;
+  margin-left: 200px;
+  border-bottom: 1px solid #56555b;
+}
+
+.byow,
+.pacman,
+.numc {
+  display: inline-block;
+  overflow: hidden;
+  margin-right: 40px;
+  position: relative;
+}
+
+.vid {
+  width: 200px;
+  overflow: hidden;
+  display: block;
+  height: 360px;
+}
+
+.byow video {
+  /* left: 20%; */
+
+  height: auto;
+  width: 300%;
+  position: absolute;
+  /* top: 30%; */
+  transform: translate(-20%, -13%);
+}
+
+.pacman video {
+  height: auto;
+  width: 800%;
+  position: absolute;
+  /* top: 30%; */
+  transform: translate(-17%, -16%);
+}
+
+.numc,
+.pacman,
+.byow,
+.image-overlay {
+  width: 289px;
+  height: 384px;
+  border-radius: 5px;
+}
+
+.numc img {
+  width: 100%;
+}
+
+.border {
+  margin-right: 30px;
+  border-left: 1px solid #56555b;
+}
+
+.image-overlay {
+  position: absolute;
+  /* PROBLEM 4: Move the color overlay to cover the image properly */
+  top: 0px;
+  left: 0px;
+  /* PROBLEM 5: What should the opacity be when there is no hover? */
+  opacity: 0.5;
+  background-color: black;
+}
+
+.image-card-text {
+  /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+  position: absolute;
+  top: 15%;
+  left: 10%;
+
+  color: #fbfaff;
+}
+.image-card-text a {
+  text-decoration: none;
+  color: #fbfaff;
+}
+
+.image-card-text:hover a {
+  text-decoration: underline;
+  color: #fbfaff;
+}
+
+.image-card-description {
+  /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+  position: absolute;
+  width: 200px;
+  top: 25%;
+  left: 10%;
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fbfaff;
+}
+
+.proj-lang {
+  /* PROBLEM 6: Similar to .image-card-cover-overlay, position the card text */
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fbfaff;
+  border-radius: 14px;
+  border: 1px solid white;
+  height: 25px;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.numc-c,
+.numc-python {
+  font-family: Karla;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fbfaff;
+  border-radius: 14px;
+  border: 1px solid white;
+  height: 25px;
+  padding-top: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.numc-python {
+  position: absolute;
+  bottom: 2%;
+  left: 15%;
+}
+
+.numc-c {
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+}
+
+/* -----------------------------contact--------------------------------------------------------------------- */
+
+.title-contact {
+  margin-left: 180px;
 }
 
 .icon {
-    height: 50px;
+  font-size: 50px;
+}
+
+.icon a {
+  text-decoration: none;
 }
 
 .icon-rowflex {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  margin-top: 80px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 200px;
 }
 
 .contact-item {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
 }
 
-
-.navbar-item:hover, #lightbulb:hover, .icon:hover, .linkedintext:hover, .githubtext:hover, .hireButton:hover {
-    cursor: pointer;
+.navbar-item:hover a,
+.skill-item:hover a,
+#lightbulb:hover a,
+.icon:hover,
+.contact-text:hover a,
+.hireButton:hover {
+  cursor: pointer;
+  color: #5377ee;
 }
 
-.linkedintext a{
-    text-decoration: none;
-    color: black;
+span:hover {
+  cursor: pointer;
 }
 
-.githubtext a{
-    text-decoration: none;
-    color: black;
+.contact-text a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  margin-left: 180px;
 }

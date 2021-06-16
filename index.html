@@ -3,47 +3,44 @@
     <head>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <title>MINAMI YAMAURA</title>
-        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Karla&family=Old+Standard+TT&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <div class="entirenavbar">
-            <div class="navbar">
-                <div id="navbaritems">
-                    <div id="lightbulb">💡</div>
-                    <div class="navbar-item"><a href="index.html">ABOUT</a></div>
-                    <div class="navbar-item">SKILLS</div>
-                    <div class="navbar-item">PROJECTS</div>
-                </div>
-            </div>
-            <div class="titleLarge">
-                <div class="name">MINAMI<br>YAMAURA</a></div>
-                <div class="cs-student">student @ UC Berkeley</a></div>
-            </div>
+        <div class="name">MINAMI<br>YAMAURA</a></div>
+        <div id="lightbulb"><span title="light/dark mode">💡</span></div>
+        <div id="navbar">
+                <div class="skill-item"><a href="#skillsection">SKILLS</a></div>
+                <div class="navbar-item"><a href="#expsection">EXPERIENCE</a></div>
+                <div class="navbar-item"><a href="#projsection">PROJECTS</a></div>
+                <div class="navbar-item"><a href="#contactsection">CONTACT</a></div>
+                <div class="navbar-item"><a href="assets/img/0621resume.pdf">resume⇩</a></div>
         </div>
  
         
         <div class="about">
-            <div class="profile"><img src="assets/img/profile.JPG"/></div>
+            <div class="profile"><img src="assets/img/nyc.jpg"/></div>
             <div class="aboutme">
                 <div class="aboutTitle">About me</div>
-                <div class="aboutMeText">Hi! I am Minami, a sophomore at UC Berkeley. I was born in Japan, but I grew up in Palos Verdes, CA. My interests include coding, AI, vintage fashion, and marine biology.</div>
+                <div class="aboutMeText">Hi! I am Minami, a rising junior at UC Berkeley studying computer science. I was born in Japan, but I grew up in Palos Verdes, CA. My interests include coding, AI, vintage fashion, and marine biology.</div>
             </div>
         </div>
 
             <!-- <img src="assets/images/location.png" height="300" /> -->
-        <div class="skillsection">
-            <div id="skills"></div>
+        <div id="skillsection">
             <div class="title-skill">Skills</div>
             <div class="entireskillflex">
+                <!-- langs and techs -->
                 <div class="skill-subflex">
-                    <div class="skill-name">Programming Languages</div>
+                    <!-- just langs -->
+                    <div class="skill-type">Programming Languages</div>
                     <div class="horizontalskillflex">
                         <div class="col">
                             <div class="lang">Python (advanced)</div>
                             <div class="advanced"></div>
                             <div class="lang">Java (advanced)</div>
                             <div class="advanced"></div>
+                            <div class="lang">C (familiar)</div>
+                            <div class="familiar"></div>
                         </div>
                         <div class="col">
                             <div class="lang">SQL (familiar)</div>
@@ -55,14 +52,14 @@
                 </div>
 
                 <div class="skill-subflex">
-                    <div class="skill-name">Technologies</div>
+                    <div class="skill-type">Technologies</div>
                     <div class="git">Git (comfortable)</div>
                     <div class="comfortable"></div>
                 </div>
 
                 <div class="internshipbanner">
-                    <div class="seriously">I am currently seeking internships for summer 2021!</div>
-                    <div class="hireButton"><a href="https://www.linkedin.com/in/minami-yamaura-4523281a3">
+                    <div class="seriously">I am currently seeking internships for summer 2022!</div>
+                    <div class="hireButton"><a href="#contactsection">
                         <div class="hiremeButton">HIRE ME</a></div>
                         <!-- <div class="hiremeButton"><a href="menu.html">HIRE ME</a></div> -->
                     </a>
@@ -71,89 +68,128 @@
             </div>
         </div>
 
-        <div class="section">
-            <div class="education-rowflex">
-            <div class="campus"><img src="assets/img/campus.jpg"/></div>
-            <div class="education-section">
+        <div id="expsection">
                 
-                <div class="title-edu">EDUCATION</div>
-                <div class="college">UC Berkeley</div>
-                <div class="gradyear">Expected Graduation: May 2023</div>
-                <div class="coursework">Relevant Coursework
-                
+                <div class="title-exp">Experience</div>
+                <!-- ----------------BLOCK1-------------------------- -->
+                <div class="bigflex">
+                    <div class="logo"><img src="assets/img/virufylogo.png"/></div>
+                    <div class="miniflex">
+                        <div class="company">Virufy</div>
+                        <div class="duration">May 2021 - present | Software Engineering Intern</div>
+                    </div>
+                </div>
+                <div class="descrip">Working with web developer team on company wesbite and AI team on developing, testing, and visualizing AI application that detects covid through cough patterns.</div>
+                <!-- - ------------------------------------------ -->
+
+                <!-- ------------------BLOCK2------------------------ -->
+                <div class="bigflex">
+                    <div class="logo"><img src="assets/img/rayann_logo.jpg"/></div>
+                    <div class="miniflex">
+                        <div class="company">Rayann Capital</div>
+                        <div class="duration">January 2021 - May 2021 | Software Engineering Intern</div>
+                    </div>
+                </div>
+                <div class="descrip">Implemented programs in python with Google Sheets to automate financial calculations and developed ecommerce website for Fitbento, a meal prep subscription service in Japan.</div>
+                <!-- ------------------------------------------ -->
+        </div>
+
+        <div id="edusection">
+                <div class="title-edu">Education</div>
+                <div class="bigflex-cal">
+                    <div class="logo"><img src="assets/img/gobears.svg.png"/></div>
+                    <div class="miniflex-cal">
+                        <div class="company">B.A. in Computer Science - UC Berkeley</div>
+                        <div class="duration">Expected Graduation: May 2023</div>
+                    </div>
+                </div>
+                <div class="courses-orgs">Relevant Coursework
                     <ul>
-                        <li>Structure and Interpretation of Computer Programs</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Computer Architecture</li>
                         <li>Data Structures</li>
+                        <li>Web Design</li>
                         <li>Discrete Math & Probability Theory</li>
+                        <li>Structure and Interpretation of Computer Programs</li>
                         <li>Linear Algerbra & Differential Equations</li>
                     </ul>
                 </div>
-                <div class="orgs">Organizations
+                <div class="courses-orgs">Extracurriculars
                     <ul>
-                        <li>Cal Japan Club - Social Chair, Finance Chair</li>
+                        <li>Cal Japan Club - Social Chair (August 2020 - May 2021)</li>
                     </ul>
                 </div>
-            </div>
-        </div>
         </div>
 
-        <div class="section">
-            <div id="projects">
-            <div class="title-proj">PROJECTS</div>
-
-                
-                
-                <div class="cubeflex">
-                <div class="kdtree">
-                <a href="https://github.com/minamiy">
-                    <img src="assets/img/kdtree.jpg" alt="">
-                    <div class="kdtree-overlay"></div>
-                    <div class="image-card-text">KdTree</div>
-                </a>
-                </div>
-
+        <div id="projsection">
+            
+            <div class="title-proj">Projects</div>
+            <div class="project-flex">
                 <div class="byow">
-                <a href="https://github.com/minamiy">
-                    <img src="assets/img/byow.png" alt="">
-                    <div class="byow-overlay"></div>
-                    <div class="image-card-text">Nuggets!</div>
-                </a>
+                    <div class="vid">
+                        <video loop autoplay muted>
+                            <source src="assets/img/byow.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="image-overlay"></div>
+                    <div class="image-card-text">Nuggets!
+                        <a href="https://www.youtube.com/watch?v=1sPGTawd7wE&t=100s">[demo]</a>
+                        <a href="https://github.com/minamiy">[code]</a>
+                    </div>
+                    <div class="image-card-description">Control your custom avatar and collect as many nuggets as you can in a pseudo-randomly generated world.</div>
+                    <div class="proj-lang">java</div>
                 </div>
-            </div>
 
+                <div class="border"> </div>
+
+                <div class="pacman">
+                        <div class="vid">
+                            <video loop autoplay muted>
+                                <source src="assets/img/pacman.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="image-overlay"></div>
+                        <div class="image-card-text">Pacman Solver</div>
+                        <div class="image-card-description">A pacman that uses Value iteration, Policy iteration, Q-Learning, Feature-based learning, and neural networks.</div>
+                        <div class="proj-lang">python</div>
+                </div>
+
+                <div class="border"> </div>
+
+                <div class="numc">
+                    <div class="numpic">
+                    <img src="assets/img/numpy_arrays.png" style="width: 289px; height: 384px; object-fit: none; object-position: 40% 50%;" alt="">
+                </div>
+                    <div class="image-overlay"></div>
+                    <div class="image-card-text">NumC</div>
+                    <div class="image-card-description">Numpy implemented entirely in C.</div>
+                        <div class="numc-c">C</div>
+                        <div class="numc-python">python</div>
+                </div>
             </div>
         </div>
 
 
-
-
-
-
-
-
-        <div class="lastsection">
-            <div class="contact-flex">
-            <div class="title-contact">contact me.</div>
+        <div id="contactsection">
+            <div class="title-contact">Contact</div>
 
             <div class="icon-rowflex">
             <div class="contact-item">
-                <div class="icon"><img src="assets/img/mail.png"/></div>
+                <div class="icon">💌</div>
                 <div class="contact-text">minamiy@berkeley.edu</div>
             </div>
             <div class="contact-item">
-                <div class="icon"><a href="https://github.com/minamiy"><img src="assets/img/github.png"/></a></div>
-                <div class="githubtext"><a href="https://github.com/minamiy">minamiy</a></div>
+                <div class="icon"><a href="https://github.com/minamiy">💻</a></div>
+                <div class="contact-text"><a href="https://github.com/minamiy">GitHub</a></div>
             </div>
             <div class="contact-item">
-                <div class = "linkedin">
-                <div class="icon"><a href="https://www.linkedin.com/in/minami-yamaura-4523281a3"><img src="assets/img/linkedin.png"/></a></div>
-                <div class="linkedintext"><a href="https://www.linkedin.com/in/minami-yamaura-4523281a3">minami-yamaura</a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/minami-yamaura-4523281a3">🔗</a></div>
+                <div class="contact-text"><a href="https://www.linkedin.com/in/minami-yamaura-4523281a3">LinkedIn</a></div>
             </div>
-            </div>
-        </div>
         </div>
     </div>
-        
+
+    <footer> <small>&copy; Copyright 2020, Minami Yamaura</small> </footer>
     <script src="assets/js/script.js"></script>
     </body>
 </html>
