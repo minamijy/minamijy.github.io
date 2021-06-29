@@ -652,11 +652,14 @@ ul {
   margin-left: 30px;
 }
 
+.contact-item:hover {
+  opacity: 0.65;
+}
+
 .navbar-item:hover a,
 .skill-item:hover a,
 #lightbulb:hover a,
 .icon:hover,
-.contact-text:hover a,
 .hireButton:hover {
   cursor: pointer;
   color: #5377ee;
@@ -669,6 +672,10 @@ span:hover {
 .contact-text a {
   text-decoration: none;
   color: black;
+}
+
+.contact-text:hover a {
+  text-decoration: none;
 }
 
 footer {
