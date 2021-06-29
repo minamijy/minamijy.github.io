@@ -104,7 +104,9 @@ body {
 .dark-mode .skill-type,
 .dark-mode .company,
 .dark-mode footer,
-.dark-mode .duration,
+.dark-mode .minitext,
+.dark-mode .minitext-proj,
+.dark-mode .minitext-contact,
 .dark-mode .descrip,
 .dark-mode .lang,
 .dark-mode .git,
@@ -399,7 +401,8 @@ body {
   font-size: 25px;
 }
 
-.duration {
+.minitext,
+.minitext-proj {
   font-family: Alice;
   font-size: 15px;
 }
@@ -469,10 +472,18 @@ ul {
 
 /* -----------------------------projects--------------------------------------------------------------------- */
 
-.title-proj {
+.title-proj,
+.minitext-proj {
   text-align: right;
   margin-right: 250px;
+}
+
+.title-proj {
   padding-top: 30px;
+}
+
+.minitext-proj {
+  padding-top: 5px;
 }
 
 .project-flex {
@@ -624,8 +635,20 @@ ul {
 
 /* -----------------------------contact--------------------------------------------------------------------- */
 
-.title-contact {
+.title-contact,
+.minitext-contact {
   margin-left: 180px;
+}
+
+.minitext-contact {
+  font-family: Alice;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  color: #595452;
+  opacity: 0.45;
+  width: 692px;
+  margin-bottom: -30px;
 }
 
 .icon {
