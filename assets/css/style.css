@@ -11,19 +11,23 @@ body {
   color: #595452;
 }
 
-.skill-type {
-  font-family: alice;
-  font-size: 20px;
-  color: #1a1513;
-}
-
 /* about, skills, contact */
 #navbar {
+  /* border: solid; */
   display: flex;
+  right: 10px;
   flex-direction: row;
-  margin-top: 20px;
+  margin-left: auto;
+  justify-content: flex-end;
+  /* margin-top: 20px; */
   padding-bottom: 10px;
-  border-bottom: 1px solid #56555b;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+#skillsection {
+  margin-top: 250px;
+  /* border: solid; */
 }
 
 /* about, skills, contact each has border */
@@ -37,9 +41,10 @@ body {
   margin-right: 20px;
 }
 
-.skill-item {
-  margin-left: 40px;
+.navbar-item {
+  margin-left: 10px;
 }
+
 
 .navbar-item a,
 .skill-item a {
@@ -85,9 +90,6 @@ body {
   margin-bottom: -10px;
 }
 
-#skillsection {
-  border-top: 1px solid #56555b;
-}
 
 /** ------------------------COLOR, FONT, STYLISH STYLING (lol) -------------------------------------------*/
 
@@ -113,13 +115,11 @@ body {
 .dark-mode .navbar-item a,
 .dark-mode .skill-item a,
 .dark-mode .aboutMeText,
+.dark-mode .aboutMeText a,
 .dark-mode .seriously,
 .dark-mode .courses-orgs,
 .dark-mode .contact-text a,
-.dark-mode .contact-text {
-  color: #e0e7ec;
-}
-
+.dark-mode .contact-text,
 .dark-mode .aboutTitle,
 .dark-mode .title-skill,
 .dark-mode .title-exp,
@@ -127,11 +127,13 @@ body {
 .dark-mode .title-proj,
 .dark-mode .title-contact,
 .dark-mode .skill-name,
-.dark-mode .hiremeButton {
+.dark-mode .caption,
+.dark-mode .hiremeButton a,
+.dark-mode .duration {
   color: #e0e7ec;
 }
 
-.aboutMeText,
+
 .tech-row1,
 .classes,
 .courses-orgs,
@@ -175,14 +177,21 @@ body {
   color: #2c2148;
 }
 
-.name {
+#homepage {
+  margin-bottom: 40px;
+}
+
+#name {
+  /* border: solid; */
   font-family: Alice;
   font-size: 275px;
   letter-spacing: -0.1em;
   line-height: 176px;
-  color: #80a8e4;
-  margin-left: 40px;
-  margin-top: -10px;
+  color: #85BFCC;
+  margin-left: 120px;
+  margin-top: 150px;
+  z-index: 15;
+  position: relative;
 }
 
 .title-skill,
@@ -197,40 +206,43 @@ body {
 }
 
 .title-skill {
+  border-top: 1px solid #56555b;
   text-align: center;
+  padding-top: 60px;
 }
 
 .title-skill,
 .title-exp {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 10px;
 }
 
-.aboutTitle,
-.aboutMeText {
-  margin-right: 30px;
-}
-
 .aboutme {
-  margin-top: 5px;
-}
+  margin-top: -260px;
+  padding-left: 160px;
+  margin-bottom: 100px;
+  /* border: solid; */
 
-.aboutTitle {
-  font-family: Alice;
-  font-size: 27px;
-  text-align: left;
 }
 
 .aboutMeText {
-  width: 400px;
-  font-size: 15px;
+  width: 500px;
   margin-bottom: 40px;
 }
 
-.about {
-  margin-left: 1000px;
-  display: flex;
-  flex-direction: column;
+.aboutMeText,
+.aboutMeText a {
+  font-size: 15px;
+  font-family: Karla;
+  color: #292625;
+}
+
+.aboutMeText a {
+  text-decoration: underline;
+}
+
+.aboutMeText:hover a {
+  color: #c9c1eb;
 }
 
 .profile img {
@@ -238,91 +250,71 @@ body {
 }
 
 .profile {
-  margin-top: -45px;
-  margin-right: 50px;
-  width: 380px;
+  /* border: solid; */
+
+  margin-left: auto;
+  margin-right: 120px;
+  margin-top: -110px;
+  z-index: 1;
+  position: relative;
+  width: 400px;
 }
 
-.skillflexbox {
-  display: flex;
-  flex-direction: column;
+/*--------------------------SKILLS-----------------------------------------------------------------------------------*/
+
+.skill-logo img {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 100%;
+  border-radius: 5%;
+  width: 64px;
+  height: 64px;
+  float: left;
 }
 
-.skill-subflex {
-  display: flex;
-  flex-direction: column;
-  margin-left: 210px;
-}
-
-.horizontalskillflex {
+.skill-logo {
   display: flex;
   flex-direction: row;
-  margin-left: 70px;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 102px;
+  border-radius: 20px;
+  border: 1px solid #56555b;
+  margin: 10px;
 }
 
-.familiar {
-  margin-bottom: 5px;
-  width: 452px;
-  height: 7px;
-
-  background-color: #75b4e1;
-
-  background: linear-gradient(
-    to right,
-    #75b4e1 0%,
-    #75b4e1 50%,
-    #fefafa 50%,
-    #fefafa 100%
-  );
-  border-radius: 2px;
-}
-
-.comfortable {
-  width: 452px;
-  height: 7px;
-  margin-bottom: 5px;
-
-  background: linear-gradient(
-    to right,
-    #75b4e1 0%,
-    #75b4e1 75%,
-    #fefafa 75%,
-    #fefafa 100%
-  );
-  border-radius: 2px;
-  margin-left: 70px;
-}
-
-.advanced {
-  width: 452px;
-  height: 7px;
-  margin-bottom: 5px;
-
-  background-color: #75b4e1;
-  border-radius: 2px;
-}
-
-.col,
-.git {
+.row-skill-flex {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-direction: column;
-  margin-right: 10px;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+  /* adjustme where the desription text goes to new line */
 }
 
-.git {
-  margin-left: 70px;
+/* div.skill-logo {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+} */
+
+.caption {
+  /* display: block; */
+  padding-top: 15px;
+  font-family: Karla;
+  font-size: 18px;
+  line-height: 70px;
+  vertical-align: center;
+  /* border: solid; */
 }
 
-.skill-name {
-  margin-left: 10px;
-  font-family: alice;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 25px;
 
-  color: #2c2148;
-}
+
+/*If you're this deep in my code, hire me or refer me. <3*/
+
 
 .internshipbanner {
   display: flex;
@@ -330,7 +322,7 @@ body {
   align-items: center;
   /* border: 1px solid black; */
   margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   width: 38.5em;
@@ -339,22 +331,34 @@ body {
 
 .dark-mode .hiremeButton {
   border: 1px solid white;
+  background:rgb(56, 55, 55);
+  border-radius: 20px;
 }
 
 .dark-mode .hiremeButton a {
   text-decoration: none;
-  color: #fff0ef;
 }
 
 .hiremeButton a {
   text-decoration: none;
   color: #000000;
+  
+}
+
+.dark-mode .hiremeButton:hover {
+  background:rgb(77, 69, 69);
+  border-radius: 20px;
+}
+
+.hiremeButton:hover {
+  background:rgb(205, 198, 198);
 }
 
 .hiremeButton {
-  width: 133.92px;
+  background:rgb(230, 227, 227);
+  width: 120px;
   height: 35px;
-  padding-top: 5px;
+  padding-top: 8px;
   border-radius: 20px;
   border: 1px solid #56555b;
 
@@ -363,7 +367,6 @@ body {
   text-align: center;
   letter-spacing: 0.1em;
   color: #000000;
-  margin-bottom: 5px;
 }
 
 .seriously {
@@ -390,6 +393,12 @@ body {
   border-radius: 5%;
 }
 
+.nwlogo img {
+  width: 64px;
+  height: 64px;
+  width: 98%;
+}
+
 .logo {
   width: 64px;
   height: 64px;
@@ -408,6 +417,8 @@ body {
 }
 
 .descrip {
+  display: flex;
+  flex-direction: row;
   width: 900px;
   /* adjustme where the desription text goes to new line */
   font-family: Karla;
@@ -647,7 +658,7 @@ ul {
   letter-spacing: 0.1em;
   color: #595452;
   opacity: 0.45;
-  width: 692px;
+  width: 100%;
   margin-bottom: -30px;
 }
 
@@ -680,7 +691,6 @@ ul {
 }
 
 .navbar-item:hover a,
-.skill-item:hover a,
 #lightbulb:hover a,
 .icon:hover,
 .hireButton:hover {
