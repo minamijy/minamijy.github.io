@@ -315,74 +315,13 @@ body {
 
 /*If you're this deep in my code, hire me or refer me. <3*/
 
-
-.internshipbanner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /* border: 1px solid black; */
-  margin-bottom: 20px;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 38.5em;
-  /* the width is for centering the banner */
-}
-
-.dark-mode .hiremeButton {
-  border: 1px solid white;
-  background:rgb(56, 55, 55);
-  border-radius: 20px;
-}
-
-.dark-mode .hiremeButton a {
-  text-decoration: none;
-}
-
-.hiremeButton a {
-  text-decoration: none;
-  color: #000000;
-  
-}
-
-.dark-mode .hiremeButton:hover {
-  background:rgb(77, 69, 69);
-  border-radius: 20px;
-}
-
-.hiremeButton:hover {
-  background:rgb(205, 198, 198);
-}
-
-.hiremeButton {
-  background:rgb(230, 227, 227);
-  width: 120px;
-  height: 35px;
-  padding-top: 8px;
-  border-radius: 20px;
-  border: 1px solid #56555b;
-
-  font-family: Karla;
-  font-size: 20px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  color: #000000;
-}
-
-.seriously {
-  font-family: alice;
-  font-size: 20px;
-  line-height: 25px;
-  padding-right: 10px;
-  color: #000000;
-}
-
 /* -----------------------------experience--------------------------------------------------------------------- */
 .title-exp,
 .bigflex,
 .descrip {
   margin-left: 270px;
-} /* this margin shifts entire section */
+} 
+/* this margin shifts entire section */
 
 .title-exp {
   margin-bottom: 10px;
@@ -408,6 +347,11 @@ body {
 .company {
   font-family: Alice;
   font-size: 25px;
+}
+
+.duration {
+  font-family: Alice;
+  /* border: 1px solid #56555b; */
 }
 
 .minitext,
@@ -437,6 +381,8 @@ body {
   margin-bottom: 10px;
   border-bottom: 1px solid #56555b;
   width: 60%;
+  /* border: 1px solid #56555b; */
+
   /* adjustme where the desription text goes to new line */
 }
 
@@ -445,6 +391,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
+  width: 900px;
+  /* border: 1px solid #56555b; */
 }
 
 /* -----------------------------education--------------------------------------------------------------------- */
@@ -653,7 +601,7 @@ ul {
 
 .minitext-contact {
   font-family: Alice;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 34px;
   letter-spacing: 0.1em;
   color: #595452;
