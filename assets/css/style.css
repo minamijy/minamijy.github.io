@@ -157,7 +157,7 @@ body {
   padding-bottom: 10px;
 }
 
-.bigflex-cal {
+.uni {
   margin-left: 470px;
 }
 
@@ -333,15 +333,14 @@ body {
 }
 
 .nwlogo img {
-  width: 64px;
-  height: 64px;
-  width: 98%;
+  width: 40px;
+  height: 40px;
+  width: 99%;
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
-  padding-bottom: 5px;
+  width: 40px;
+  height: 40px;
 }
 
 .company {
@@ -397,11 +396,12 @@ body {
 
 /* -----------------------------education--------------------------------------------------------------------- */
 
-.bigflex-cal {
+.uni {
   /*😎*/
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .miniflex-cal {
