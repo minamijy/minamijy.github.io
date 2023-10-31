@@ -1,1 +1,1 @@
-# minamiy.github.io
+# minamijy.github.io
